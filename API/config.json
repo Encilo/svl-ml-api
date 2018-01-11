@@ -1,0 +1,34 @@
+{
+    "training_data_location": "", 
+    "model_directory": "model",
+    "model_name": "model.pkl",
+    "model_columns_name": "model_columns.pkl",
+    "data_columns": [ "age",
+                      "notes",
+                      "visualAcuity_1",
+                      "lensometer_1",
+                      "autorefraction_1",
+                      "prescription_1",
+                      "prescription_2",
+                      "prescription_3"
+                    ],
+    "aws_access_key_id": "",
+    "aws_secret_access_key": "",
+    "default_port": 80,
+    "debug": "True",
+    "log_file_name": "app.log",
+    "log_file_max_size_in_bytes": 1000000,
+    "authentication_username": "",
+    "authentication_password": "",
+    "s3_bucket_name": "svl-ml-data-bucket",
+    "s3_file_name": "ModernDay.csv",
+    "cors_origins": "*",
+    "jwt_validation": {        
+        "full_validation": { 
+            "audience": "",
+            "issuer": ""
+        },
+        "jwt_signature_secret": "qwertyuiopasdfghjklzxcvbnm123456",
+        "jwt_algorithm": "HS256"        
+    }   
+}
