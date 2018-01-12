@@ -884,3 +884,1851 @@
 }
  
 
+[2018-Jan-12 11:50] 127.0.0.1 GET http /api/v1/train? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\authentication\authenticate.py", line 47, in decorated
+    return f(*args, **kwargs)
+  File "application.py", line 58, in train
+    model_columns, reg = train_right_eye_sphere_model(config)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\train\right_eye.py", line 8, in train_right_eye_sphere_model
+    s3 = client('s3',
+NameError: name 'client' is not defined
+
+[2018-Jan-12 11:50] 127.0.0.1 GET http /api/v1/train? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\authentication\authenticate.py", line 47, in decorated
+    return f(*args, **kwargs)
+  File "application.py", line 58, in train
+    model_columns, reg = train_right_eye_sphere_model(config)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\train\right_eye.py", line 8, in train_right_eye_sphere_model
+    s3 = client('s3',
+NameError: name 'client' is not defined
+
+[2018-Jan-12 11:51] 127.0.0.1 GET http /api/v1/train? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\authentication\authenticate.py", line 47, in decorated
+    return f(*args, **kwargs)
+  File "application.py", line 58, in train
+    model_columns, reg = train_right_eye_sphere_model(config)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\train\right_eye.py", line 18, in train_right_eye_sphere_model
+    bucket_file = s3.get_object(Bucket = config["s3_bucket_name"], Key = config["s3_file_name"])
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\botocore\client.py", line 317, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\botocore\client.py", line 615, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the GetObject operation: The AWS Access Key Id you provided does not exist in our records.
+
+[2018-Jan-12 11:53] 127.0.0.1 GET http /api/v1/train? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\authentication\authenticate.py", line 47, in decorated
+    return f(*args, **kwargs)
+  File "application.py", line 58, in train
+    model_columns, reg = train_right_eye_sphere_model(config)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\train\right_eye.py", line 61, in train_right_eye_sphere_model
+    return list(X.columns), regressor
+UnboundLocalError: local variable 'X' referenced before assignment
+
+[2018-Jan-12 11:55] 127.0.0.1 GET http /api/v1/train? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\authentication\authenticate.py", line 47, in decorated
+    return f(*args, **kwargs)
+  File "application.py", line 58, in train
+    model_columns, reg = train_right_eye_sphere_model(config)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\train\right_eye.py", line 61, in train_right_eye_sphere_model
+    return list(X.columns), regressor
+UnboundLocalError: local variable 'X' referenced before assignment
+
+[2018-Jan-12 11:56] 127.0.0.1 GET http /api/v1/train? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\authentication\authenticate.py", line 47, in decorated
+    return f(*args, **kwargs)
+  File "application.py", line 58, in train
+    model_columns, reg = train_right_eye_sphere_model(config)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\train\right_eye.py", line 62, in train_right_eye_sphere_model
+    return list(X.columns), regressor
+UnboundLocalError: local variable 'X' referenced before assignment
+
+[2018-Jan-12 11:56] 127.0.0.1 GET http /api/v1/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 11:57] 127.0.0.1 GET http /api/v1/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/clear' [GET]> 
+ Model cleared 
+
+[2018-Jan-12 11:57] 127.0.0.1 GET http /api/v1/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 11:59] 127.0.0.1 GET http /api/v1/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/clear' [GET]> 
+ Model cleared 
+
+[2018-Jan-12 11:59] 127.0.0.1 GET http /api/v1/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 12:50] 127.0.0.1 GET http /api/v1/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 12:50] 127.0.0.1 GET http /api/v1/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 12:50] 127.0.0.1 GET http /api/v1/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/clear' [GET]> 
+ Model cleared 
+
+[2018-Jan-12 12:50] 127.0.0.1 GET http /api/v1/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/clear' [GET]> 
+ Model cleared 
+
+[2018-Jan-12 12:51] 127.0.0.1 GET http /api/v1/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:03] 127.0.0.1 GET http /api/v1/train? 404 NOT FOUND 
+ <Request 'http://127.0.0.1:5000/api/v1/train' [GET]> 
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+ 
+
+[2018-Jan-12 13:04] 127.0.0.1 GET http /api/v1/od/train? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Enes\Desktop\Machine Learning\SmartVisionLabs\APIVirtualEnv\api-virt\API\authentication\authenticate.py", line 47, in decorated
+    return f(*args, **kwargs)
+  File "application.py", line 51, in train
+    joblib.dump(model_columns, model_columns_file_name)
+NameError: name 'model_columns_file_name' is not defined
+
+[2018-Jan-12 13:13] 127.0.0.1 GET http /api/v1/od/clear? 404 NOT FOUND 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+ 
+
+[2018-Jan-12 13:13] 127.0.0.1 GET http /api/v1/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/clear' [GET]> 
+ Model cleared 
+
+[2018-Jan-12 13:13] 127.0.0.1 GET http /api/v1/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/clear' [GET]> 
+ Model cleared 
+
+[2018-Jan-12 13:14] 127.0.0.1 GET http /api/v1/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/clear' [GET]> 
+ Model cleared 
+
+[2018-Jan-12 13:14] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:21] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:22] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:31] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 13:31] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 13:31] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 13:31] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 13:31] 127.0.0.1 POST http /api/v1/od/train? 405 METHOD NOT ALLOWED 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+ 
+
+[2018-Jan-12 13:31] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:32] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:32] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:32] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:32] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:32] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:35] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:36] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:36] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:37] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:37] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:37] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:37] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:37] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:37] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:37] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:37] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:38] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:38] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:38] 127.0.0.1 POST http /api/v1/od/clear? 405 METHOD NOT ALLOWED 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+ 
+
+[2018-Jan-12 13:38] 127.0.0.1 GET http /api/v1/od/p? 404 NOT FOUND 
+ <Request 'http://127.0.0.1:5000/api/v1/od/p' [GET]> 
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>
+ 
+
+[2018-Jan-12 13:38] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:38] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 13:52] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 13:52] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:52] 127.0.0.1 GET http /api/v1/od/predict? 405 METHOD NOT ALLOWED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/predict' [GET]> 
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+ 
+
+[2018-Jan-12 13:52] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:52] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:52] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:56] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:56] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 13:57] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 13:57] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 13:57] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:00] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 14:01] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 14:01] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 14:01] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 14:01] 127.0.0.1 POST http /api/v1/od/predict? 400 BAD REQUEST 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ Model is not trained yet. You can train the model by using /train endpoint. 
+
+[2018-Jan-12 14:02] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:02] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:02] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:02] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:02] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:02] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 14:02] 127.0.0.1 GET http /api/v1/od/clear? 200 OK 
+ <Request 'http://127.0.0.1:5000/api/v1/od/clear' [GET]> 
+ Right eye model cleared 
+
+[2018-Jan-12 14:02] 127.0.0.1 GET http /api/v1/od/train? 201 CREATED 
+ <Request 'http://127.0.0.1:5000/api/v1/od/train' [GET]> 
+ Model created/trained successfully 
+
+[2018-Jan-12 14:02] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '123', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'autorefraction_1': -2.25}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "123"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, {'visit_id': '456', 'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'autorefraction_1': -0.25}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -0.75, 
+      "visit_id": "456"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:08] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:08] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:08] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:08] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:08] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:08] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:11] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:19] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '91235', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:19] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '91235', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:19] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '91235', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:19] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:19] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:20] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:23] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:23] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:23] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:23] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:23] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:23] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:23] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:26] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:26] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:26] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:26] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:27] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:27] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:28] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:30] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:36] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:47] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:54] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 14:55] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:01] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:04] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:05] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:07] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:11] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:12] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:13] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:14] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:16] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:17] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "prediction": -1.5, 
+      "visit_id": "91235"
+    }, 
+    {
+      "prediction": -1.5, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:25] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '12345', 'od': {'age': 33, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }, 
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "12345"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:26] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:26] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:29] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '90835', 'od': {'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'lensometer_2': 0.0, 'lensometer_3': 0, 'autorefraction_1': -0.25, 'autorefraction_2': -0.5, 'autorefraction_3': 85}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -0.75
+      }, 
+      "visit_id": "90835"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:32] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '90835', 'od': {'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'lensometer_2': 0.0, 'lensometer_3': 0, 'autorefraction_1': -0.25, 'autorefraction_2': -0.5, 'autorefraction_3': 85}, 'os': {}}, {'visit_id': '90262', 'od': {'age': 31, 'notes': 'happy', 'visualAcuity_1': 1.0, 'lensometer_1': -4.25, 'lensometer_2': -1.25, 'lensometer_3': 125, 'autorefraction_1': -4.0, 'autorefraction_2': -2.0, 'autorefraction_3': 128}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -0.75
+      }, 
+      "visit_id": "90835"
+    }, 
+    {
+      "od": {
+        "axis": 125.0, 
+        "cyl": -1.25, 
+        "sphere": -4.25
+      }, 
+      "visit_id": "90262"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:45] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '90835', 'od': {'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'lensometer_2': 0.0, 'lensometer_3': 0, 'autorefraction_1': -0.25, 'autorefraction_2': -0.5, 'autorefraction_3': 85}, 'os': {}}, {'visit_id': '90262', 'od': {'age': 31, 'notes': 'happy', 'visualAcuity_1': 1.0, 'lensometer_1': -4.25, 'lensometer_2': -1.25, 'lensometer_3': 125, 'autorefraction_1': -4.0, 'autorefraction_2': -2.0, 'autorefraction_3': 128}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -0.75
+      }, 
+      "visit_id": "90835"
+    }, 
+    {
+      "od": {
+        "axis": 125.0, 
+        "cyl": -1.25, 
+        "sphere": -4.25
+      }, 
+      "visit_id": "90262"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:45] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '90835', 'od': {'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'lensometer_2': 0.0, 'lensometer_3': 0, 'autorefraction_1': -0.25, 'autorefraction_2': -0.5, 'autorefraction_3': 85}, 'os': {}}, {'visit_id': '90262', 'od': {'age': 31, 'notes': 'happy', 'visualAcuity_1': 1.0, 'lensometer_1': -4.25, 'lensometer_2': -1.25, 'lensometer_3': 125, 'autorefraction_1': -4.0, 'autorefraction_2': -2.0, 'autorefraction_3': 128}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -0.75
+      }, 
+      "visit_id": "90835"
+    }, 
+    {
+      "od": {
+        "axis": 125.0, 
+        "cyl": -1.25, 
+        "sphere": -4.25
+      }, 
+      "visit_id": "90262"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:48] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '90835', 'od': {'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'lensometer_2': 0.0, 'lensometer_3': 0, 'autorefraction_1': -0.25, 'autorefraction_2': -0.5, 'autorefraction_3': 85}, 'os': {}}, {'visit_id': '90262', 'od': {'age': 31, 'notes': 'happy', 'visualAcuity_1': 1.0, 'lensometer_1': -4.25, 'lensometer_2': -1.25, 'lensometer_3': 125, 'autorefraction_1': -4.0, 'autorefraction_2': -2.0, 'autorefraction_3': 128}, 'os': {}}, {'visit_id': '90058', 'od': {'age': 47, 'notes': 'unhappy', 'visualAcuity_1': 1.0, 'lensometer_1': -3.75, 'lensometer_2': 0.0, 'lensometer_3': 0.0, 'autorefraction_1': -4.75, 'autorefraction_2': -0.5, 'autorefraction_3': 50}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -0.75
+      }, 
+      "visit_id": "90835"
+    }, 
+    {
+      "od": {
+        "axis": 125.0, 
+        "cyl": -1.25, 
+        "sphere": -4.25
+      }, 
+      "visit_id": "90262"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -4.0
+      }, 
+      "visit_id": "90058"
+    }
+  ]
+}
+ 
+
+[2018-Jan-12 15:49] 127.0.0.1 POST http /api/v1/od/predict? 200 OK 
+ [{'visit_id': '91235', 'od': {'age': 23, 'notes': 'unhappy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.25, 'lensometer_2': -2.25, 'lensometer_3': 176, 'autorefraction_1': -2.25, 'autorefraction_2': -2.5, 'autorefraction_3': 176}, 'os': {}}, {'visit_id': '90835', 'od': {'age': 42, 'notes': 'happy', 'visualAcuity_1': 0.8, 'lensometer_1': -1.0, 'lensometer_2': 0.0, 'lensometer_3': 0, 'autorefraction_1': -0.25, 'autorefraction_2': -0.5, 'autorefraction_3': 85}, 'os': {}}, {'visit_id': '90262', 'od': {'age': 31, 'notes': 'happy', 'visualAcuity_1': 1.0, 'lensometer_1': -4.25, 'lensometer_2': -1.25, 'lensometer_3': 125, 'autorefraction_1': -4.0, 'autorefraction_2': -2.0, 'autorefraction_3': 128}, 'os': {}}, {'visit_id': '90058', 'od': {'age': 47, 'notes': 'unhappy', 'visualAcuity_1': 1.0, 'lensometer_1': -3.75, 'lensometer_2': 0.0, 'lensometer_3': 0.0, 'autorefraction_1': -4.75, 'autorefraction_2': -0.5, 'autorefraction_3': 50}, 'os': {}}] 
+ {
+  "predictions": [
+    {
+      "od": {
+        "axis": 176.0, 
+        "cyl": -2.25, 
+        "sphere": -1.5
+      }, 
+      "visit_id": "91235"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -0.75
+      }, 
+      "visit_id": "90835"
+    }, 
+    {
+      "od": {
+        "axis": 125.0, 
+        "cyl": -1.25, 
+        "sphere": -4.25
+      }, 
+      "visit_id": "90262"
+    }, 
+    {
+      "od": {
+        "axis": 0.0, 
+        "cyl": 0.0, 
+        "sphere": -4.0
+      }, 
+      "visit_id": "90058"
+    }
+  ]
+}
+ 
+

@@ -1,17 +1,29 @@
 {
     "training_data_location": "", 
     "model_directory": "model",
-    "model_name": "model.pkl",
-    "model_columns_name": "model_columns.pkl",
-    "data_columns": [ "age",
-                      "notes",
-                      "visualAcuity_1",
-                      "lensometer_1",
-                      "autorefraction_1",
-                      "prescription_1",
-                      "prescription_2",
-                      "prescription_3"
-                    ],
+    "data_set_columns": {
+        "right_eye_sphere": [
+            "age",
+            "notes",
+            "visualAcuity_1",
+            "lensometer_1",
+            "autorefraction_1",
+            "prescription_1",
+            "prescription_2",
+            "prescription_3"
+        ],
+        "right_eye_cyl_axis":[
+            "age",
+            "notes",
+            "lensometer_2", 
+            "lensometer_3",
+            "autorefraction_2", 
+            "autorefraction_3", 
+            "prescription_1",
+            "prescription_2",
+            "prescription_3"
+        ]
+    },
     "aws_access_key_id": "",
     "aws_secret_access_key": "",
     "default_port": 80,
