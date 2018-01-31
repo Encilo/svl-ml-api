@@ -152,6 +152,15 @@ def clear():
         print(str(e))
         return Response('Could not remove and recreate the model directory', status=500)
 
+@application.before_request
+def before_request():
+    if request.method == "POST":
+        logger.error('%s %s %s %s %s \n',
+                         request.remote_addr,
+                         request.method,
+                         request.scheme,
+                         request.full_path,
+                         request.json)
 
 @application.after_request
 def after_request(response):
@@ -159,26 +168,14 @@ def after_request(response):
     # since that 500 is already logged via @application.errorhandler
     if response.status_code != 500:
         ts = strftime('[%Y-%b-%d %H:%M]')
-        if request.method == "POST":
-            logger.error('%s %s %s %s %s %s \n %s \n %s \n',
-                         ts,
-                         request.remote_addr,
-                         request.method,
-                         request.scheme,
-                         request.full_path,
-                         response.status,
-                         request.json,
-                         response.data.decode("utf-8"))
-        else:
-            logger.error('%s %s %s %s %s %s \n %s \n %s \n',
-                         ts,
-                         request.remote_addr,
-                         request.method,
-                         request.scheme,
-                         request.full_path,
-                         response.status,
-                         request,
-                         response.data.decode("utf-8"))
+        logger.error('%s %s %s %s %s %s \n %s \n',
+            ts,
+            request.remote_addr,
+            request.method,
+            request.scheme,
+            request.full_path,
+            response.status,
+            response.data.decode("utf-8"))
     return response
 
 
